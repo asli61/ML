@@ -12,7 +12,6 @@ from hyperopt import fmin, tpe, hp
 
 data = pd.read_csv("train.csv")
 
-# Your data preprocessing steps...
 
 # Replace the property_type, new_build, and estate_type with numerical values
 data.loc[data['property_type'] == 'D', 'property_type'] = 3
